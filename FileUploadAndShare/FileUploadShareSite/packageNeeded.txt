@@ -1,0 +1,2 @@
+ npm install axios react dotenv express mongoose multer nodemon
+ npm install express cors dotenv mongoose multer
