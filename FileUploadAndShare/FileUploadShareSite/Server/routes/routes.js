@@ -1,7 +1,7 @@
 import express from 'express';
-import {uploadImage, getImage} from '../controller/imgController.js'
 import upload from '../utils/upload.js';
-import { get } from 'mongoose';
+import {uploadImage, getImage} from '../controller/image-controller.js'
+
 
 const router = express.Router();
 

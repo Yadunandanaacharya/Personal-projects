@@ -1,6 +1,6 @@
 import express, { Router } from 'express';
 import router from '../Server/routes/routes.js'
-import DBConnection from '../Server/controller/database/db.js';
+import DBConnection from '../Server/database/db.js';
 import cors from 'cors';
 import dotenv from 'dotenv';
 // const express = require()    
@@ -10,8 +10,8 @@ const app = express();
 
 //use middlewares
 app.use(cors()); //use this beginning to avoid cors error in browser
-app.use(express.json()); //help manage json data
 app.use(express.urlencoded({ extended: true }));
+app.use(express.json()); //help manage json data
 app.use('/', router);
 
 DBConnection();

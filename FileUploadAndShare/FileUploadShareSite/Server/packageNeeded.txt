@@ -1,1 +1,1 @@
-npm install express cors dotenv mongoose multer
+npm install express cors dotenv mongoose multer bcrypt
